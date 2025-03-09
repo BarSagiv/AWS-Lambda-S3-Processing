@@ -3,7 +3,10 @@
 
 # Overview
 
-Built a serverless data processing pipeline where you ingest data, process it using AWS Lambda, store it in Amazon S3, and then monitor the entire process using CloudWatch. You can integrate SNS notifications to alert you when certain thresholds are met (e.g., when data processing is completed, or if there’s an error).
+This project provides an automated serverless solution for processing files uploaded to an S3 bucket using AWS Lambda. The Lambda function is triggered whenever a new file is uploaded to the designated S3 bucket. It processes the file, performs necessary transformations, and logs the results. The solution also includes integration with CloudWatch for monitoring Lambda execution and SNS for failure notifications.
+
+The goal of this project is to automate file processing tasks (such as text file parsing or data transformation) in a scalable and cost-effective manner using AWS services. You can extend the processing logic within the Lambda function to suit various use cases, such as data filtering, transformation, or integration with other AWS services like DynamoDB or S3.
+
 
 
 
