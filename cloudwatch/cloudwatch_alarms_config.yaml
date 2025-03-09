@@ -1,0 +1,13 @@
+AlarmName: "LambdaFailureAlarm"
+MetricName: "Errors"
+Namespace: "AWS/Lambda"
+Statistic: "Sum"
+Period: 60
+EvaluationPeriods: 1
+Threshold: 1
+ComparisonOperator: "GreaterThanOrEqualToThreshold"
+Dimensions:
+  - Name: "FunctionName"
+    Value: "s3fileprocessor"
+AlarmActions:
+  - arn:aws:sns:eu-north-1:barsa:sns_topic_error_alarm
