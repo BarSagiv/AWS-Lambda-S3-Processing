@@ -54,7 +54,7 @@ To monitor the Lambda function's health, set up a CloudWatch alarm. Go to the AW
 ![Image](https://github.com/user-attachments/assets/46927cdf-3730-4611-9686-ea20bb61fbe8)
 
 
-Step 5: Test the Setup
+## Step 5: Test the Setup
 Once everything is configured, upload a test file (such as a .txt file) to your S3 bucket. This should trigger the Lambda function, and you can verify the function's execution by checking CloudWatch Logs. If everything works as expected, you should see log entries showing that the file was processed. If you've set up SNS, you will receive a notification in case of any failure.
 
 ![Image](https://github.com/user-attachments/assets/973f97c9-856b-401a-872a-1297e07e6441)
